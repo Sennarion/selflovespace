@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import App from 'components/app';
+import 'modern-normalize/modern-normalize.css';
+import './styles/global.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/selflovespace">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
