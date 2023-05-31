@@ -1,15 +1,15 @@
 @import '../../styles//vars.scss';
 
-.header {
+.footer {
   display: flex;
   align-items: center;
-  height: 12rem;
+  height: 20rem;
   padding: 3rem;
 
-  background-color: $beige;
+  background-color: $orange;
 }
 
-.headerContent {
+.footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,14 +20,17 @@
   width: 22rem;
 }
 
-.navList {
+.socialList {
   display: flex;
-  gap: 4rem;
 }
 
-.navLink {
+.socialLink {
+  display: block;
   padding: 1rem;
+  margin-bottom: 4rem;
 
-  text-transform: uppercase;
-  color: $blue;
+  color: $black;
+}
+
+.policy {
 }
