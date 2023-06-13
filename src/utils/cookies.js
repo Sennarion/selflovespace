@@ -7,7 +7,7 @@ export function setCookies(value, func) {
   const d = new Date();
   d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
   const expires = 'expires=' + d.toUTCString();
-  document.cookie = 'cookiesAccepted' + '=' + value + ';' + expires + ';path=/';
+  document.cookie = `cookiesAccepted=${value}; expires=${expires}; path=/`;
   func(false);
 }
 
