@@ -1,7 +1,31 @@
+@import './mixins.scss';
+@import './vars.scss';
+
+:root {
+  --toastify-color-success: #348a9b;
+  --toastify-color-error: #cc475c;
+}
+
 html {
   box-sizing: border-box;
-  font-size: 10px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @include bp($desktop, min) {
+    font-size: calc(100vw / 1920 * 10);
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    font-size: calc(100vw / 1440 * 10);
+  }
+
+  @include bp($tablet_max - 1, $mobile) {
+    font-size: 10px;
+  }
+
+  @include bp($mobile - 1) {
+    font-size: calc(100vw / 375 * 10);
+  }
 }
 
 *,
@@ -13,7 +37,10 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
-  color: #111;
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: #454545;
 }
 
 img {

@@ -1,0 +1,23 @@
+@import '../../../styles//vars.scss';
+
+.titleWrapper {
+  margin-bottom: 8rem;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: $blue;
+}
+
+.subtitle {
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+
+  font-size: 2rem;
+  text-transform: lowercase;
+}

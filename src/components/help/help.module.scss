@@ -1,0 +1,48 @@
+@import '../../styles//mixins.scss';
+@import '../../styles//vars.scss';
+
+.content {
+  display: flex;
+  gap: 10rem;
+}
+
+.imgWrapper {
+  flex-shrink: 0;
+  width: 50%;
+
+  @include wrapperRounded(10rem);
+}
+
+.img {
+  @include imgRounded(10rem);
+}
+
+.list {
+  margin-bottom: 6rem;
+}
+
+.item {
+  position: relative;
+
+  font-size: 2.4rem;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 5%;
+    width: 40%;
+    height: 2px;
+    background-color: $pink;
+  }
+}
+
+.text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

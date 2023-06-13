@@ -4,11 +4,17 @@ import Container from 'components/ui/container/container';
 import logo from '../../images/logo.svg';
 
 export default function Header() {
+  const navItems = [
+    { title: 'home', href: '/' },
+    { title: 'about', href: '/about' },
+    { title: 'services', href: '/services' },
+  ];
+
   return (
     <header className={styles.header}>
       <Container>
         <div className={styles.headerContent}>
-          <a href="#" className={styles.logoWrapper}>
+          <a href="/" className={styles.logoWrapper}>
             <img
               className={styles.logo}
               src={logo}
@@ -17,21 +23,18 @@ export default function Header() {
           </a>
           <nav className={styles.nav}>
             <ul className={styles.navList}>
-              <li className={styles.navItem}>
-                <NavLink className={styles.navLink} to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li className={styles.navItem}>
-                <NavLink className={styles.navLink} to="/about">
-                  About
-                </NavLink>
-              </li>
-              <li className={styles.navItem}>
-                <NavLink className={styles.navLink} to="/services">
-                  Services
-                </NavLink>
-              </li>
+              {navItems.map(({ title, href }) => (
+                <li className={styles.navItem} key={title}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? `${styles.activeNavLink}` : `${styles.navLink}`
+                    }
+                    to={href}
+                  >
+                    {title}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>

@@ -1,5 +1,12 @@
+@import '../../../styles//mixins.scss';
 @import '../../../styles//vars.scss';
 
 .section {
-  padding: 3rem;
+  @include bp($tablet_max, min) {
+    padding: 10rem 3rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 10rem 2rem;
+  }
 }
