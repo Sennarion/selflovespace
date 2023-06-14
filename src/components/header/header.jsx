@@ -2,14 +2,9 @@ import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
 import Container from 'components/ui/container/container';
 import logo from '../../images/logo.svg';
+import { navItems } from 'data/data';
 
 export default function Header() {
-  const navItems = [
-    { title: 'home', href: '/' },
-    { title: 'about', href: '/about' },
-    { title: 'services', href: '/services' },
-  ];
-
   return (
     <header className={styles.header}>
       <Container>

@@ -3,22 +3,9 @@ import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
 import styles from './help.module.scss';
 import img from '../../images/wecanhelp.png';
+import { helpList } from 'data/data';
 
 export default function Help() {
-  const items = [
-    'Personal problems',
-    'Family psychotherapy and relationship problems',
-    'Crises and recovery from psychotraumatic situations',
-    'Fears, anxieties',
-    'Apathy and depression',
-    'Despair and feeling of powerlessness',
-    'Child-parent relations',
-    'Self-esteem problems',
-    'Intrusive thoughts',
-    'Experiencing negative emotions and feelings',
-    'Difficulties in communication with other people',
-  ];
-
   return (
     <Section>
       <Container>
@@ -29,7 +16,7 @@ export default function Help() {
           </div>
           <div className={styles.textWrapper}>
             <ul className={styles.list}>
-              {items.map(item => (
+              {helpList.map(item => (
                 <li className={styles.item} key={item}>
                   {item}
                 </li>

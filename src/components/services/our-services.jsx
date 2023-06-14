@@ -1,24 +1,11 @@
+import { HashLink } from 'react-router-hash-link';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
-
 import styles from './our-services.module.scss';
-
-import img1 from '../../images/service1.svg';
-import img2 from '../../images/service2.svg';
-import img3 from '../../images/service3.svg';
-import img4 from '../../images/service4.svg';
-import img5 from '../../images/service5.svg';
+import { services } from 'data/data';
 
 export default function OurServices() {
-  const services = [
-    { img: img1, href: '#', title: 'Retreats' },
-    { img: img2, href: '#', title: 'Individual sessions' },
-    { img: img3, href: '#', title: 'Group psychotherapy' },
-    { img: img4, href: '#', title: 'Family/couple consultations' },
-    { img: img5, href: '#', title: 'Body therapy' },
-  ];
-
   return (
     <Section>
       <Container>
@@ -29,12 +16,12 @@ export default function OurServices() {
           <ul className={styles.services}>
             {services.map(({ img, href, title }) => (
               <li className={styles.serviceItem} key={title}>
-                <a className={styles.service} href={href}>
+                <HashLink className={styles.service} to={href}>
                   <div className={styles.imgWrapper}>
                     <img className={styles.img} src={img} alt={title} />
                   </div>
                   <h3 className={styles.title}>{title}</h3>
-                </a>
+                </HashLink>
               </li>
             ))}
           </ul>

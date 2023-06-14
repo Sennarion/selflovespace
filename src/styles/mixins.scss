@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 @mixin bp($width, $value: max) {
   @if $value ==min {
     @media screen and (min-width: $width) {
@@ -27,6 +29,11 @@
     border: 2px solid $pink;
     border-top-left-radius: $value;
     border-top-right-radius: $value;
+
+    @include bp($tablet_max - 1) {
+      top: 1rem;
+      left: 1rem;
+    }
   }
 }
 
@@ -53,6 +60,11 @@
     border: 2px solid $blue;
     border-top-right-radius: $value;
     border-bottom-left-radius: $value;
+
+    @include bp($tablet_max - 1) {
+      top: -1rem;
+      left: -1rem;
+    }
   }
 }
 
@@ -78,6 +90,11 @@
     left: -2rem;
     border: 2px solid $pink;
     border-radius: $value;
+
+    @include bp($tablet_max - 1) {
+      top: 1rem;
+      left: -1rem;
+    }
   }
 }
 

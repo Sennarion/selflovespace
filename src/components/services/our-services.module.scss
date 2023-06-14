@@ -5,11 +5,24 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8rem;
+
+  @include bp($tablet_min - 1) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .serviceItem {
   display: block;
   width: calc((100% - 32rem) / 5);
+
+  @include bp($tablet_max - 1) {
+    width: calc((100% - 8rem) / 2);
+  }
+
+  @include bp($tablet_min - 1) {
+    width: 50%;
+  }
 }
 
 .service {

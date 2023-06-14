@@ -2,6 +2,10 @@
 @import '../../../styles//vars.scss';
 
 .section {
+  &:nth-of-type(even) {
+    background-color: $beige_2;
+  }
+
   @include bp($tablet_max, min) {
     padding: 10rem 3rem;
   }

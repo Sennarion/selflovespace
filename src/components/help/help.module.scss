@@ -4,6 +4,14 @@
 .content {
   display: flex;
   gap: 10rem;
+
+  @include bp($tablet_max, min) {
+    align-items: flex-start;
+  }
+
+  @include bp($tablet_max - 1) {
+    flex-direction: column;
+  }
 }
 
 .imgWrapper {
@@ -11,10 +19,23 @@
   width: 50%;
 
   @include wrapperRounded(10rem);
+
+  @include bp($tablet_max - 1) {
+    width: 100%;
+  }
 }
 
 .img {
   @include imgRounded(10rem);
+}
+
+.textWrapper {
+  width: 50%;
+
+  @include bp($tablet_max - 1) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .list {
@@ -38,6 +59,11 @@
     width: 40%;
     height: 2px;
     background-color: $pink;
+
+    @include bp($tablet_max - 1) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 

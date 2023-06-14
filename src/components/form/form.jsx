@@ -17,7 +17,7 @@ export default function Form() {
     const text = data.get('text');
 
     axios
-      .post('https://getform.io/f/dd1f07e3-dd2e-4a55-84e6-1f8eca34e095', {
+      .post('https://getform.io/f/61c5e17b-12ca-4a16-9827-7f07f078b33c', {
         name,
         phone,
         email,
