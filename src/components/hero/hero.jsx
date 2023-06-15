@@ -15,9 +15,11 @@ export default function Hero() {
               <span className={styles.titleAccent}> Happiness</span>
             </h1>
             <p className={styles.subtitle}>
-              Throughout life you man encounter obstacles and face difficulties.
-              At retreats, consultations and trainings, we will learn how to
-              live happily and achieve harmony in relationships with loved ones
+              Throughout life you may encounter obstacles and face difficulties.
+            </p>
+            <p className={styles.subtitle}>
+              At retreats, individual sessions and trainings we can learn how to
+              live happily and achieve harmony in relationships with others.
             </p>
             <div className={styles.buttonWrapper}>
               <a href="#form" className={styles.button}>

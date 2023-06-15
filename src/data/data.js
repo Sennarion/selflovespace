@@ -240,3 +240,9 @@ export const psychotherapy = [
     text: 'A perfect way to feel much better for anyone who feels lonely, is constantly in a depressed mood or seems that life is monotonous and has lost its color. It is also a great opportunity to recover after experienced stress or difficult life events',
   },
 ];
+
+export const achievements = [
+  { number: '500+', text: 'group sessions' },
+  { number: '5000+', text: 'individual sessions' },
+  { number: '3000+', text: 'body theraphy sessions' },
+];
