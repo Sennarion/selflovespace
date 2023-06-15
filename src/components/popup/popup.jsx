@@ -8,6 +8,14 @@ export default function Popup({ setIsPopupOpen }) {
       <p className={styles.text}>
         This website uses cookies to ensure you get the best experience on our
         website.
+        <a
+          className={styles.link}
+          target="_blank"
+          href="https://www.docdroid.net/XuAybtL/privacy-policy-valentyna-bukovska-psychological-services-pdf"
+          rel="noreferrer"
+        >
+          Learn more
+        </a>
       </p>
       <div className={styles.butttons}>
         <button

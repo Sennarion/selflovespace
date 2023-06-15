@@ -17,7 +17,7 @@
   width: calc((100% - 32rem) / 5);
 
   @include bp($tablet_max - 1) {
-    width: calc((100% - 8rem) / 2);
+    width: calc((100% - 16rem) / 3);
   }
 
   @include bp($tablet_min - 1) {

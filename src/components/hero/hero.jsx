@@ -6,7 +6,7 @@ import heroImg from '../../images/hero.png';
 
 export default function Hero() {
   return (
-    <Section>
+    <Section fullHeight>
       <Container>
         <div className={styles.content}>
           <div className={styles.column}>

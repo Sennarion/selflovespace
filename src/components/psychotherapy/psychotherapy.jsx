@@ -8,9 +8,9 @@ import { psychotherapy, leaders } from 'data/data';
 
 export default function Psychotherapy() {
   return (
-    <Section>
+    <Section id="psychotherapy">
       <Container>
-        <div className={styles.content} id="psychotherapy">
+        <div className={styles.content}>
           <div className={styles.imgWrapper}>
             <img className={styles.img} src={img} alt="Valentyna Bukovska" />
           </div>

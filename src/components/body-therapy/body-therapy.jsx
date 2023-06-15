@@ -8,9 +8,9 @@ import { leaders } from 'data/data';
 
 export default function BodyTherapy() {
   return (
-    <Section>
+    <Section id="therapy">
       <Container>
-        <div className={styles.content} id="therapy">
+        <div className={styles.content}>
           <div className={styles.imgWrapper}>
             <img
               className={styles.img}

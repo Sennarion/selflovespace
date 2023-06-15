@@ -27,7 +27,7 @@ export const leaders = [
     img: leader1,
     name: 'Valentyna Bukovska',
     position: 'psychotherapist',
-    link: 'about#valentyna',
+    link: '/about#valentyna',
     descr:
       "Will help to restore contact with one's inner world, achieve inner balance and master the skills of emotional regulation in the format of group work",
   },
@@ -35,7 +35,7 @@ export const leaders = [
     img: leader2,
     name: 'Lidiia Oliiarnyk',
     position: 'choreographer and dance teacher',
-    link: 'about#lidiia',
+    link: '/about#lidiia',
     descr:
       'Will help to restore contact with and listen to your body while learning to recognize signals from our body',
   },

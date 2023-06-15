@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 2rem;
 }
 
 .logoWrapper {
@@ -27,10 +29,10 @@
 .socialLink {
   display: block;
   padding: 1rem;
-  margin-bottom: 4rem;
 
   color: $black;
 }
 
 .policy {
+  text-align: center;
 }

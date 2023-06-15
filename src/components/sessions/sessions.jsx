@@ -8,9 +8,9 @@ import img from '../../images/service4.png';
 
 export default function Sessions() {
   return (
-    <Section>
+    <Section id="sessions">
       <Container>
-        <div className={styles.content} id="sessions">
+        <div className={styles.content}>
           <div className={styles.imgWrapper}>
             <img className={styles.img} src={img} alt="Valentyna Bukovska" />
           </div>

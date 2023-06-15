@@ -1,4 +1,5 @@
-@import '../../styles//vars.scss';
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
 
 .header {
   display: flex;
@@ -16,8 +17,19 @@
 }
 
 .logoWrapper {
+  flex-shrink: 0;
   display: block;
   width: 22rem;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  @include bp($tablet_max - 1) {
+    display: none;
+  }
 }
 
 .navList {
@@ -37,4 +49,26 @@
 
   text-transform: uppercase;
   color: $pink;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconLink {
+  display: block;
+  padding: 0.4rem;
+  color: $blue;
+
+  svg {
+    display: block;
+  }
+}
+
+.mobileNavWrapper {
+  @include bp($tablet_max, min) {
+    display: none;
+  }
 }

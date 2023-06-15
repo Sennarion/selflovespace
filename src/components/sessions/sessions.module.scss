@@ -7,7 +7,7 @@
   gap: 10rem;
 
   @include bp($tablet_max - 1) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 

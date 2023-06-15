@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.footerContent}>
-          <a href="google.com" className={styles.logoWrapper}>
+          <a href="selflovespace.uk" className={styles.logoWrapper}>
             <img
               className={styles.logo}
               src={logo}
@@ -19,23 +19,23 @@ export default function Footer() {
             <ul className={styles.socialList}>
               <li className={styles.socialItem}>
                 <a className={styles.socialLink} href="google.com">
-                  <CiFacebook size="40" />
+                  <CiFacebook size="30" color="#348a9b" />
                 </a>
               </li>
               <li className={styles.socialItem}>
                 <a className={styles.socialLink} href="google.com">
-                  <CiLinkedin size="40" />
+                  <CiLinkedin size="30" color="#348a9b" />
                 </a>
               </li>
               <li className={styles.socialItem}>
                 <a className={styles.socialLink} href="google.com">
-                  <CiInstagram size="40" />
+                  <CiInstagram size="30" color="#348a9b" />
                 </a>
               </li>
             </ul>
-            <p className={styles.policy}>© Self Love Space. 2023</p>
           </div>
         </div>
+        <p className={styles.policy}>© Self Love Space. 2023</p>
       </Container>
     </footer>
   );

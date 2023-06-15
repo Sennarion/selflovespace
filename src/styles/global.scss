@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 
   @include bp($desktop, min) {
-    font-size: calc(100vw / 1920 * 10);
+    font-size: 10px;
   }
 
   @include bp($desktop - 1, $tablet_max) {

@@ -43,9 +43,9 @@ export default function Form() {
   };
 
   return (
-    <Section>
+    <Section id="form">
       <Container>
-        <div className={styles.content} id="form">
+        <div className={styles.content}>
           <SectionTitle subtitle="We are more then happy to meet you for 30 minutes via Google Meet to introduce all our services and find the best way to be useful in your life">
             The best time for our meeting
           </SectionTitle>

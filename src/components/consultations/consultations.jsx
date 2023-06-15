@@ -8,9 +8,9 @@ import { consultations, leaders } from 'data/data';
 
 export default function Consultations() {
   return (
-    <Section>
+    <Section id="consultations">
       <Container>
-        <div className={styles.content} id="consultations">
+        <div className={styles.content}>
           <div className={styles.imgWrapper}>
             <img className={styles.img} src={img} alt="Valentyna Bukovska" />
           </div>

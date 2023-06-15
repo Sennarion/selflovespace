@@ -7,10 +7,10 @@ import { retreats } from 'data/data';
 
 export default function Retreats() {
   return (
-    <Section>
+    <Section id="retreats">
       <Container>
         <SectionTitle>Retreats</SectionTitle>
-        <div className={styles.content} id="retreats">
+        <div className={styles.content}>
           <ul className={styles.list}>
             {retreats.map(({ title, img, text }) => (
               <li className={styles.item} key={title}>
