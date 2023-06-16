@@ -3,7 +3,7 @@
 
 .item {
   &:not(:last-child) {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -32,7 +32,7 @@
 
 .imgWrapper {
   flex-shrink: 0;
-  width: 40%;
+  width: 30%;
 
   @include bp($tablet_max - 1) {
     width: 100%;
@@ -40,7 +40,7 @@
 }
 
 .text {
-  width: 60%;
+  width: 70%;
 
   @include bp($tablet_max - 1) {
     width: 100%;

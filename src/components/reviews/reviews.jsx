@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
 import Section from 'components/ui/section/section';
@@ -12,7 +13,9 @@ export default function Reviews() {
   return (
     <Section>
       <Container>
-        <SectionTitle>Our lovely clients</SectionTitle>
+        <SectionTitle className="js-fade-el-translate">
+          Our lovely clients
+        </SectionTitle>
         <Swiper
           style={{
             '--swiper-pagination-color': '#348a9b',
@@ -33,10 +36,10 @@ export default function Reviews() {
           {reviews.map(({ img, name, text }) => (
             <SwiperSlide key={name}>
               <div className={styles.content}>
-                <div className={styles.imageWrapper}>
+                <div className={classNames(styles.imageWrapper, 'js-fade-el')}>
                   <img className={styles.image} src={img} alt={name} />
                 </div>
-                <div className={styles.textWrapper}>
+                <div className={classNames(styles.textWrapper, 'js-fade-el')}>
                   <h3 className={styles.name}>{name}</h3>
                   <p className={styles.text}>{text}</p>
                 </div>

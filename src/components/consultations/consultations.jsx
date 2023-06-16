@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
@@ -11,11 +12,15 @@ export default function Consultations() {
     <Section id="consultations">
       <Container>
         <div className={styles.content}>
-          <div className={styles.imgWrapper}>
+          <div
+            className={classNames(styles.imgWrapper, 'js-fade-el-translate')}
+          >
             <img className={styles.img} src={img} alt="Valentyna Bukovska" />
           </div>
-          <div className={styles.textWrapper}>
-            <SectionTitle>Family/couple consultations</SectionTitle>
+          <div className={classNames(styles.textWrapper, 'js-fade-el')}>
+            <SectionTitle className="js-fade-el-translate">
+              Family/couple consultations
+            </SectionTitle>
             <h3 className={styles.textTitle}>
               How to understand that you need to come to a family session?
             </h3>

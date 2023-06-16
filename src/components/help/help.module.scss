@@ -45,19 +45,19 @@
 .item {
   position: relative;
 
-  font-size: 2.4rem;
+  font-size: 2rem;
 
   &:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   &:after {
     position: absolute;
     content: '';
-    bottom: -2rem;
+    bottom: -1rem;
     left: 5%;
     width: 40%;
-    height: 2px;
+    height: 1px;
     background-color: $pink;
 
     @include bp($tablet_max - 1) {
@@ -68,7 +68,8 @@
 }
 
 .text {
-  font-size: 2.4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.4rem;
   font-weight: 600;
-  text-transform: uppercase;
+  color: $pink;
 }

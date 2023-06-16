@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
@@ -9,11 +10,11 @@ export default function Retreats() {
   return (
     <Section id="retreats">
       <Container>
-        <SectionTitle>Retreats</SectionTitle>
+        <SectionTitle className="js-fade-el-translate">Retreats</SectionTitle>
         <div className={styles.content}>
           <ul className={styles.list}>
             {retreats.map(({ title, img, text }) => (
-              <li className={styles.item} key={title}>
+              <li className={classNames(styles.item, 'js-fade-el')} key={title}>
                 <h3 className={styles.title}>{title}</h3>
                 <div className={styles.row}>
                   <div className={styles.imgWrapper}>

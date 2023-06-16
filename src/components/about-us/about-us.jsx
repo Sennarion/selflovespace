@@ -9,11 +9,15 @@ export default function AboutUs() {
   return (
     <Section>
       <Container>
-        <SectionTitle>About us</SectionTitle>
+        <SectionTitle className="js-fade-el-translate">About us</SectionTitle>
         <div className={styles.content}>
           {about.map(
             ({ id, img, photo, name, position, descr, listTitle, list }) => (
-              <div className={styles.row} id={id} key={id}>
+              <div
+                className={classNames(styles.row, 'js-fade-el')}
+                id={id}
+                key={id}
+              >
                 <div
                   className={classNames(
                     styles.imgWrapper,
@@ -39,9 +43,14 @@ export default function AboutUs() {
                     </p>
                   )}
                   {list && (
-                    <ul className={styles.list}>
+                    <ul
+                      className={classNames(styles.list, 'js-fade-stagger-w')}
+                    >
                       {list.map(item => (
-                        <li className={styles.item} key={item}>
+                        <li
+                          className={classNames(styles.item, 'js-fade-stagger')}
+                          key={item}
+                        >
                           {item}
                         </li>
                       ))}

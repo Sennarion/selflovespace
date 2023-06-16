@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import styles from './hero.module.scss';
@@ -9,19 +10,19 @@ export default function Hero() {
     <Section fullHeight>
       <Container>
         <div className={styles.content}>
-          <div className={styles.column}>
-            <h1 className={styles.title}>
+          <div className={styles.textWrapper}>
+            <h1 className={classNames(styles.title, 'js-fade-el-translate')}>
               We will help you to find the key to your
               <span className={styles.titleAccent}> Happiness</span>
             </h1>
-            <p className={styles.subtitle}>
+            <p className={classNames(styles.subtitle, 'js-fade-el')}>
               Throughout life you may encounter obstacles and face difficulties.
             </p>
-            <p className={styles.subtitle}>
+            <p className={classNames(styles.subtitle, 'js-fade-el')}>
               At retreats, individual sessions and trainings we can learn how to
               live happily and achieve harmony in relationships with others.
             </p>
-            <div className={styles.buttonWrapper}>
+            <div className={classNames(styles.buttonWrapper, 'js-fade-el')}>
               <a href="#form" className={styles.button}>
                 <span className={styles.buttonText}>
                   free introduction meeting
@@ -32,14 +33,14 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className={styles.column}>
-            <div className={styles.imageWrapper}>
-              <img
-                className={styles.image}
-                src={heroImg}
-                alt="Valentyna and Lidiia"
-              />
-            </div>
+          <div
+            className={classNames(styles.imageWrapper, 'js-fade-el-translate')}
+          >
+            <img
+              className={styles.image}
+              src={heroImg}
+              alt="Valentyna and Lidiia"
+            />
           </div>
         </div>
       </Container>

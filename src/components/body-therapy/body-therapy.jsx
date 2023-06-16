@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
@@ -11,7 +12,9 @@ export default function BodyTherapy() {
     <Section id="therapy">
       <Container>
         <div className={styles.content}>
-          <div className={styles.imgWrapper}>
+          <div
+            className={classNames(styles.imgWrapper, 'js-fade-el-translate')}
+          >
             <img
               className={styles.img}
               src={img}
@@ -19,8 +22,10 @@ export default function BodyTherapy() {
             />
           </div>
           <div className={styles.textWrapper}>
-            <SectionTitle>Body – therapy </SectionTitle>
-            <p className={styles.text}>
+            <SectionTitle className="js-fade-el-translate">
+              Body – therapy
+            </SectionTitle>
+            <p className={classNames(styles.text, 'js-fade-el')}>
               A personal dance session. First of al it is an individual approach
               to your needs and characteristics. For the beginning , we will
               determine exactly what result you are interested in at the end. We
@@ -31,7 +36,7 @@ export default function BodyTherapy() {
               what previous experience your body has and what type of load it is
               ready for.
             </p>
-            <ul className={styles.leadersList}>
+            <ul className={classNames(styles.leadersList, 'js-fade-el')}>
               <Leader {...leaders[1]} />
             </ul>
           </div>

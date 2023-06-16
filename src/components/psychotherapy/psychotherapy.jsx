@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
 import SectionTitle from 'components/ui/section-title/section-title';
@@ -11,20 +12,25 @@ export default function Psychotherapy() {
     <Section id="psychotherapy">
       <Container>
         <div className={styles.content}>
-          <div className={styles.imgWrapper}>
+          <div className={classNames(styles.imgWrapper, 'js-fade-el')}>
             <img className={styles.img} src={img} alt="Valentyna Bukovska" />
           </div>
           <div className={styles.textWrapper}>
-            <SectionTitle>Group psychotherapy</SectionTitle>
-            <ul className={styles.list}>
+            <SectionTitle className="js-fade-el-translate">
+              Group psychotherapy
+            </SectionTitle>
+            <ul className={classNames(styles.list, 'js-fade-stagger-w')}>
               {psychotherapy.map(({ title, text }) => (
-                <li className={styles.item} key={title}>
+                <li
+                  className={classNames(styles.item, 'js-fade-stagger')}
+                  key={title}
+                >
                   <h3 className={styles.textTitle}>{title}</h3>
                   <p className={styles.text}>{text}</p>
                 </li>
               ))}
             </ul>
-            <ul className={styles.leadersList}>
+            <ul className={classNames(styles.leadersList, 'js-fade-el')}>
               <Leader {...leaders[0]} />
             </ul>
           </div>

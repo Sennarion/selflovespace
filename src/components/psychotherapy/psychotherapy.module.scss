@@ -3,6 +3,7 @@
 
 .content {
   display: flex;
+  flex-direction: row-reverse;
   align-items: flex-start;
   gap: 10rem;
 
@@ -13,7 +14,7 @@
 
 .imgWrapper {
   flex-shrink: 0;
-  width: 40%;
+  width: 30%;
 
   @include wrapperRounded(10rem);
 
@@ -27,7 +28,7 @@
 }
 
 .textWrapper {
-  width: 60%;
+  width: 70%;
 
   @include bp($tablet_max - 1) {
     width: 100%;

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { HashLink } from 'react-router-hash-link';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
@@ -10,12 +11,18 @@ export default function OurServices() {
     <Section>
       <Container>
         <div className={styles.content}>
-          <SectionTitle subtitle="Together we can overcome the problems in a way that is convenient for you ">
+          <SectionTitle
+            className="js-fade-el-translate"
+            subtitle="Together we can overcome the problems in a way that is convenient for you "
+          >
             Our services
           </SectionTitle>
-          <ul className={styles.services}>
+          <ul className={classNames(styles.services, 'js-fade-stagger-w')}>
             {services.map(({ img, href, title }) => (
-              <li className={styles.serviceItem} key={title}>
+              <li
+                className={classNames(styles.serviceItem, 'js-fade-stagger')}
+                key={title}
+              >
                 <HashLink className={styles.service} to={href}>
                   <div className={styles.imgWrapper}>
                     <img className={styles.img} src={img} alt={title} />

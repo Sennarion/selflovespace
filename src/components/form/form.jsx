@@ -1,4 +1,5 @@
 import axios from 'axios';
+import classNames from 'classnames';
 import { ToastContainer, toast } from 'react-toastify';
 import Section from 'components/ui/section/section';
 import Container from 'components/ui/container/container';
@@ -46,13 +47,16 @@ export default function Form() {
     <Section id="form">
       <Container>
         <div className={styles.content}>
-          <SectionTitle subtitle="We are more then happy to meet you for 30 minutes via Google Meet to introduce all our services and find the best way to be useful in your life">
+          <SectionTitle
+            className="js-fade-el-translate"
+            subtitle="We are more then happy to meet you for 30 minutes via Google Meet to introduce all our services and find the best way to be useful in your life"
+          >
             The best time for our meeting
           </SectionTitle>
           <form className={styles.form} onSubmit={onSubmit}>
             <div className={styles.formContent}>
               <div className={styles.column}>
-                <label className={styles.label}>
+                <label className={classNames(styles.label, 'js-fade-el')}>
                   <span className={styles.labelTitle}>Your name</span>
                   <input
                     className={styles.input}
@@ -62,7 +66,7 @@ export default function Form() {
                     required
                   />
                 </label>
-                <label className={styles.label}>
+                <label className={classNames(styles.label, 'js-fade-el')}>
                   <span className={styles.labelTitle}>Your phone</span>
                   <input
                     className={styles.input}
@@ -72,7 +76,7 @@ export default function Form() {
                     required
                   />
                 </label>
-                <label className={styles.label}>
+                <label className={classNames(styles.label, 'js-fade-el')}>
                   <span className={styles.labelTitle}>Your email</span>
                   <input
                     className={styles.input}
@@ -84,7 +88,7 @@ export default function Form() {
                 </label>
               </div>
               <div className={styles.column}>
-                <label className={styles.label}>
+                <label className={classNames(styles.label, 'js-fade-el')}>
                   <span className={styles.labelTitle}>Type something</span>
                   <textarea
                     className={styles.textArea}
@@ -94,7 +98,10 @@ export default function Form() {
                 </label>
               </div>
             </div>
-            <button className={styles.button} type="submit">
+            <button
+              className={classNames(styles.button, 'js-fade-el')}
+              type="submit"
+            >
               send an application
             </button>
           </form>

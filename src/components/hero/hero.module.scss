@@ -15,16 +15,8 @@
   }
 }
 
-.column {
-  width: 50%;
-
-  @include bp($tablet_max - 1) {
-    width: 60%;
-
-    &:last-child {
-      display: none;
-    }
-  }
+.textWrapper {
+  width: 60%;
 
   @include bp($tablet_min - 1) {
     width: 100%;
@@ -155,6 +147,12 @@
 
 .imageWrapper {
   @include wrapperArch(40rem);
+
+  width: 40%;
+
+  @include bp($tablet_max - 1) {
+    display: none;
+  }
 }
 
 .image {
