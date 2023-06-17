@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/selflovespace/static/css/main.708429fa.css",
-    "main.js": "/selflovespace/static/js/main.25a05674.js",
+    "main.css": "/selflovespace/static/css/main.bf95baae.css",
+    "main.js": "/selflovespace/static/js/main.cfec18a0.js",
     "static/media/3.PNG": "/selflovespace/static/media/3.8bc66e659e27e230464c.PNG",
     "static/media/1.PNG": "/selflovespace/static/media/1.a8bbda8fe909d53eb0e4.PNG",
-    "static/media/wecanhelp.png": "/selflovespace/static/media/wecanhelp.9abca7389355ec0c8068.png",
     "static/media/5.PNG": "/selflovespace/static/media/5.e6cbb4880fb03e94cda1.PNG",
     "static/media/4.PNG": "/selflovespace/static/media/4.ba2465302b7fe771c971.PNG",
     "static/media/2.PNG": "/selflovespace/static/media/2.0886a923dab0fea0aeb1.PNG",
-    "static/media/hero.png": "/selflovespace/static/media/hero.84fe2ba36e05bdd8681d.png",
-    "static/media/service3.png": "/selflovespace/static/media/service3.d47eba13f06a3713339a.png",
-    "static/media/service6.png": "/selflovespace/static/media/service6.ba923ddda8f9b33241fc.png",
-    "static/media/service2.png": "/selflovespace/static/media/service2.3b19080f0cc856c79967.png",
-    "static/media/service5.png": "/selflovespace/static/media/service5.dcdd66d0ba55b63420c6.png",
-    "static/media/service1.png": "/selflovespace/static/media/service1.6a760fcc40bfe6ea552e.png",
-    "static/media/about1.png": "/selflovespace/static/media/about1.4c37b000f3255f07c21f.png",
-    "static/media/about2.png": "/selflovespace/static/media/about2.d524f4bc8f0e12dbf049.png",
     "static/media/service7.png": "/selflovespace/static/media/service7.ee3c8c83d1d8349180e1.png",
-    "static/media/service4.png": "/selflovespace/static/media/service4.b746a01ef49367dead8f.png",
+    "static/media/wecanhelp.png": "/selflovespace/static/media/wecanhelp.60e4f295d326b3e9101e.png",
+    "static/media/service3.png": "/selflovespace/static/media/service3.ae390faad579d9c649a5.png",
+    "static/media/hero.png": "/selflovespace/static/media/hero.608c1290c9afcb2b7254.png",
+    "static/media/service2.png": "/selflovespace/static/media/service2.9a3410382287666e8d70.png",
+    "static/media/service6.png": "/selflovespace/static/media/service6.13b0e7b334de007c3690.png",
+    "static/media/about2.png": "/selflovespace/static/media/about2.7b1f3d5823236658c8e0.png",
+    "static/media/service5.png": "/selflovespace/static/media/service5.4a1b233e7260692c1a41.png",
+    "static/media/service1.png": "/selflovespace/static/media/service1.f2beefd3c87c94a00b2d.png",
+    "static/media/service4.png": "/selflovespace/static/media/service4.afa922907369d75a121c.png",
+    "static/media/about1.png": "/selflovespace/static/media/about1.9004552a23d096d0e020.png",
     "static/media/logo.svg": "/selflovespace/static/media/logo.e82568441b298bd5ba0e375241105e5b.svg",
-    "static/media/leader2.jpg": "/selflovespace/static/media/leader2.faeba0921179780a7e52.jpg",
-    "static/media/leader1.jpg": "/selflovespace/static/media/leader1.e51c892b6ae0bb97d843.jpg",
     "static/media/service2.svg": "/selflovespace/static/media/service2.8cbf0f506b958ec47fe9e7398c72d147.svg",
     "static/media/service3.svg": "/selflovespace/static/media/service3.3e681f9d4f38a3c4249e469025d47608.svg",
     "static/media/service4.svg": "/selflovespace/static/media/service4.edf4a624d57fea3e47ec486d4a159d0a.svg",
@@ -28,11 +26,11 @@
     "static/media/service1.svg": "/selflovespace/static/media/service1.a8f4a709a73dfa933c9ee90641e0f244.svg",
     "index.html": "/selflovespace/index.html",
     "static/media/arrow.svg": "/selflovespace/static/media/arrow.8494bfca68ab47c5250d4d5e58825f61.svg",
-    "main.708429fa.css.map": "/selflovespace/static/css/main.708429fa.css.map",
-    "main.25a05674.js.map": "/selflovespace/static/js/main.25a05674.js.map"
+    "main.bf95baae.css.map": "/selflovespace/static/css/main.bf95baae.css.map",
+    "main.cfec18a0.js.map": "/selflovespace/static/js/main.cfec18a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.708429fa.css",
-    "static/js/main.25a05674.js"
+    "static/css/main.bf95baae.css",
+    "static/js/main.cfec18a0.js"
   ]
 }
