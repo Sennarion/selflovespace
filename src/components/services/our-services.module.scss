@@ -32,6 +32,13 @@
 
   text-decoration: none;
   color: inherit;
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+  }
 }
 
 .imgWrapper {
@@ -43,7 +50,7 @@
   aspect-ratio: 1 / 1;
   margin-bottom: 4rem;
 
-  border: 3px solid $blue;
+  border: 2px solid $blue;
   border-radius: 50%;
   z-index: 0;
 

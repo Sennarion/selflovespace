@@ -57,9 +57,9 @@ ul + .textItem {
 }
 
 .imgWrapper {
-  @include wrapperRounded(8rem);
+  @include wrapperRounded(4rem);
 }
 
 .img {
-  @include imgRounded(8rem);
+  @include imgRounded(4rem);
 }

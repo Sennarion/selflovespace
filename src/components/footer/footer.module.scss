@@ -30,9 +30,33 @@
   display: block;
   padding: 1rem;
 
-  color: $black;
+  color: $blue;
+  transition: color 0.2s ease-in-out;
+
+  svg {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
 }
 
 .policy {
   text-align: center;
+}
+
+.link {
+  display: inline-block;
+  margin-left: 1rem;
+  color: inherit;
+  text-decoration: underline;
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
 }

@@ -16,9 +16,9 @@
 
 .imgWrapper {
   flex-shrink: 0;
-  width: 40%;
+  width: 30%;
 
-  @include wrapperRounded(10rem);
+  @include wrapperLeaf(10rem);
 
   @include bp($tablet_max - 1) {
     width: 100%;
@@ -26,11 +26,11 @@
 }
 
 .img {
-  @include imgRounded(10rem);
+  @include imgLeaf(10rem);
 }
 
 .textWrapper {
-  width: 60%;
+  width: 70%;
 
   @include bp($tablet_max - 1) {
     width: 100%;
@@ -55,7 +55,7 @@
     position: absolute;
     content: '';
     bottom: -1rem;
-    left: 5%;
+    left: -5%;
     width: 40%;
     height: 1px;
     background-color: $pink;

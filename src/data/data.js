@@ -47,7 +47,7 @@ export const about = [
     img: about1,
     photo: 'arch',
     name: 'Valentyna Bukovska',
-    position: 'Psychitherapist',
+    position: 'Psychotherapist',
     descr:
       'I am a psychotherapist specializing in emotionally focused therapy, crisis psychology, trauma therapy and business psychology. Master degree in psychology A mediator – specialist in the peaceful resolution of conflicts. Experience in the field of psychotherapy and corporate psychology – more than 13 years. Extensive experience in conducting individuial sessions and trainings Working with various categories of clients – corporate, military and victims of war in Ukraine (from 2014 to the present), working with families and individual clients.',
     listTitle: 'Member of professional organizations:',

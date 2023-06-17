@@ -41,6 +41,13 @@
 
   text-transform: uppercase;
   color: $blue;
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
 }
 
 .activeNavLink {
@@ -63,6 +70,13 @@
 
   svg {
     display: block;
+  }
+
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $green;
   }
 }
 

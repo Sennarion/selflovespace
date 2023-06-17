@@ -16,7 +16,7 @@
   flex-shrink: 0;
   width: 40%;
 
-  @include wrapperRounded(10rem);
+  @include wrapperRounded(6rem);
 
   @include bp($tablet_max - 1) {
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .img {
-  @include imgRounded(10rem);
+  @include imgRounded(6rem);
 }
 
 .textWrapper {
