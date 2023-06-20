@@ -43,19 +43,18 @@ export default function Select() {
   }, [isSelectOpen]);
 
   return (
-    <div className={styles.selectWrapper}>
+    <div className={styles.selectWrapper} ref={$select}>
+      <button
+        className={styles.btn}
+        onClick={() => setIsSelectOpen(prev => !prev)}
+      >
+        Nearest events
+      </button>
       <div
         className={classNames(styles.select, {
           [styles['active']]: isSelectOpen,
         })}
-        ref={$select}
       >
-        <button
-          className={styles.btn}
-          onClick={() => setIsSelectOpen(prev => !prev)}
-        >
-          Nearest events
-        </button>
         <ul className={styles.selectList} ref={$selectList}>
           <li className={styles.listItem}>
             <a
