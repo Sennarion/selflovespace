@@ -1,6 +1,12 @@
 @import '../../styles/vars.scss';
 @import '../../styles/mixins.scss';
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .menu {
   position: fixed;
   top: 12rem;
@@ -22,10 +28,6 @@
     opacity: 1;
     pointer-events: auto;
   }
-}
-
-.navList {
-  margin-bottom: 4rem;
 }
 
 .navLink {

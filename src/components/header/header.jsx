@@ -4,6 +4,7 @@ import { Sling as Hamburger } from 'hamburger-react';
 import styles from './header.module.scss';
 import Container from 'components/ui/container/container';
 import MobileMenu from 'components/mobile-menu/mobile-menu';
+import Select from 'components/ui/select/select';
 import logo from '../../images/logo.svg';
 import { navItems } from 'data/data';
 import { BsTelephoneFill } from 'react-icons/bs';
@@ -70,6 +71,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
+            <Select />
           </div>
           <div className={styles.mobileNavWrapper}>
             <Hamburger

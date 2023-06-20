@@ -30,7 +30,7 @@ export default function Footer() {
               <li className={styles.socialItem}>
                 <a
                   className={styles.socialLink}
-                  href="google.com"
+                  href="https://www.linkedin.com/in/self-love-space-13487727b/"
                   target="_blank"
                   rel="noreferrer"
                 >

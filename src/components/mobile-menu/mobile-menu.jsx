@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import styles from './mobile-menu.module.scss';
+import Select from 'components/ui/select/select';
 import { navItems } from 'data/data';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
@@ -39,6 +40,7 @@ export default function MobileMenu({ isMenuOpen, toggleMenu }) {
             </a>
           </li>
         </ul>
+        <Select />
       </div>
     </div>
   );

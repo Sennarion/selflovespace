@@ -26,11 +26,11 @@ export default function BodyTherapy() {
               Body – therapy
             </SectionTitle>
             <p className={classNames(styles.text, 'js-fade-el')}>
-              A personal dance session. First of al it is an individual approach
-              to your needs and characteristics. For the beginning , we will
-              determine exactly what result you are interested in at the end. We
-              will desside through which style of dance (jazz, funk, Latin,
-              heels) you want to work with your body and, of course, what
+              A personal dance session. First of all it is an individual
+              approach to your needs and characteristics. For the beginning , we
+              will determine exactly what result you are interested in at the
+              end. We will deside through which style of dance (jazz, funk,
+              Latin, heels) you want to work with your body and, of course, what
               personal specifics of the body you have. A personal type of load
               will be chosen for everyone. Therefore, it is important to know
               what previous experience your body has and what type of load it is
